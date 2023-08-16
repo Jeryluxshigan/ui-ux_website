@@ -1,0 +1,13 @@
+<kendo-appbar>
+  <kendo-appbar-section>
+    <img src="./assets/images/logo.jpg" class="logo">
+  </kendo-appbar-section>
+  <kendo-appbar-spacer></kendo-appbar-spacer>
+  <kendo-appbar-section>
+    <kendo-textbox [style.width.px]="160" placeholder="Search.." [clearButton]="true">
+      <ng-template kendoTextBoxPrefixTemplate>
+        <kendo-icon name="search" class="search-icon"></kendo-icon>
+      </ng-template>
+    </kendo-textbox>
+  </kendo-appbar-section>
+</kendo-appbar>

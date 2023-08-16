@@ -1,0 +1,34 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="title">
+            Grid
+        </div>
+        <p class="main-para">
+            <!-- Replace with actual content -->
+            Lorem ipsum dolor sit amet consectetur. Et a enim fermentum pellentesque elit. Tellus blandit dignissim
+            ligula lorem porta ac adipiscing ultricies. Faucibus ultricies augue viverra nunc dictum interdum. In
+            pretium leo vitae tristique hendrerit neque nisl interdum dolor sit amet consectetur. Et a enim fermentum
+            pellentesque elit. Tellus blandit dignissim ligula lorem porta ac adipiscing ultricies. Faucibus ultricies
+            augue viverra
+            nunc dictum interdum. In pretium leo vitae tristique hendrerit neque nisl interdum..
+        </p>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-grid [data]="gridData">
+            <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+            <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+            <kendo-grid-column field="Category.CategoryName" title="Category"></kendo-grid-column>
+            <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+        </kendo-grid>
+         <!-- Code Demo Container -->
+         <div class="demo-container">
+            <div class="code">
+                 <!-- Replace with actual code snippet -->
+                 ng add @progress/kendo-angular-grid
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

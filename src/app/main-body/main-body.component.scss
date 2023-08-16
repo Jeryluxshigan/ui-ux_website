@@ -1,0 +1,16 @@
+.main-content {
+    display: flex;
+  }
+  
+  /* Styles for Sidebar */
+  app-sidebar {
+    width: 200px; /* Adjust width based on your design */
+    
+  }
+  
+  /* Styles for Main Body Content */
+  .main-body-content {
+    flex-grow: 1;
+    padding: 5px; /* Adjust padding as needed */
+   
+  }
