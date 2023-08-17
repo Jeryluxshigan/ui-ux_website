@@ -26,6 +26,20 @@ kendo-appbar {
     border-color: $Dark-primary-color;
 }
 
+/* Footer-Component */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: $Dark-primary-color;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
 /* Side-bar-Component */
 .sidebar {
     width: 200px;

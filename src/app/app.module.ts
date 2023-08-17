@@ -19,6 +19,7 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { CardComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -38,7 +39,8 @@ import { GridModule } from '@progress/kendo-angular-grid';
     GridComponent,
     ColumnsComponent,
     CardComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
