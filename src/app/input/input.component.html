@@ -1,0 +1,46 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="title">
+            Input
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>An input should stretch to fill its parent width.</li>
+                <li>An input should be vertically aligned to its relevant label.</li>
+                <li>All numeric inputs should have its content aligned to the right.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <div class="content-title">
+            1.1 Textbox
+        </div>
+        <kendo-textbox placeholder="John Smith"></kendo-textbox>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-textbox placeholder="John Smith"&gt; <br>
+                &lt;/kendo-textbox&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+        <div class="content-title">
+            1.2 NumericTextBox
+        </div>
+        <kendo-numerictextbox format="#.00 kg" [step]="0.1"></kendo-numerictextbox>
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-numerictextbox <br>
+                format="#.00 kg" <br>
+                [step]="0.1" <br>
+                &gt; &lt;/kendo-numerictextbox&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

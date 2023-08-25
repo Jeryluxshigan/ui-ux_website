@@ -1,1 +1,33 @@
-<p>buttons works!</p>
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="title">
+            Buttons
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>A button should be used in its default state.</li>
+                <li>If a button needs to be highlighted, then it should carry the “danger” class.</li>
+                <li>A 5px gap should be kept between buttons.</li>
+                <li>No button should be given a fixed size. All buttons should be responsive.</li>
+                <li>When the button action needs to be prevented, the button should be in an inactive state unless the error needs to be showcase to the user</li>
+                <li>Search / Save buttons should always be displayed at far right of the screen.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <button kendoButton (click)="onButtonClick()">My Button</button>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;button kendoButton (click)="onButtonClick()" class="example-btn&gt; <br>
+                My Button <br>
+                &lt;/button&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>
