@@ -1,0 +1,48 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="title">
+            Model
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>All buttons should be displayed within the modal “kendo-dialog-actions” section.</li>
+                <li>A modal cannot be sized greater than 80% of the available screen size.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <button kendoButton *ngIf="!opened" (click)="open()" class="example-btn">Open dialog</button>
+        <kendo-dialog title="Please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250" [width]="450">
+            <p style="margin: 30px; text-align: center;">
+                Are you sure you want to continue?
+            </p>
+            <kendo-dialog-actions>
+                <button kendoButton (click)="close('no')">No</button>
+                <button kendoButton (click)="close('yes')" themeColor="primary">Yes</button>
+            </kendo-dialog-actions>
+        </kendo-dialog>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;button kendoButton *ngIf="!opened" (click)="open()"&gt; <br>
+                Open dialog <br>
+                &lt;/button>&gt;<br>
+                &lt;kendo-dialog title="Please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250"
+                [width]="450"&gt; <br>
+                &lt;p style="margin: 30px; text-align: center;"&gt; <br>
+                Are you sure you want to continue? <br>
+                &lt;/p&gt; <br>
+                &lt;Kendo-dialog-actions&gt; <br>
+                &lt;button kendoButton (click)="close('no')"&gt; No <br>
+                &lt;/button&gt; <br>
+                &lt;button kendoButton (click)="close('yes')" themeColor="primary"&gt; Yes <br>
+                &lt;/button&gt; <br>
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

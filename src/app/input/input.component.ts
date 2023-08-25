@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons',
-  templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss']
+  selector: 'app-input',
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.scss']
 })
-export class ButtonsComponent {
+export class InputComponent {
   public onButtonClick(): void {
     console.log("click");
     alert("Kendo Angular UI Button was clicked.");
   }
-  
+
 }

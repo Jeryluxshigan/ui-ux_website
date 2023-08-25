@@ -4,16 +4,30 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { LayoutComponent } from './layout/layout.component';
 import { ComponentsComponent } from './components/components.component';
 import { GridComponent } from './grid/grid.component';
-import { ColumnsComponent } from './columns/columns.component';
-import { CardComponent } from '@progress/kendo-angular-layout';
-import { ButtonComponent } from '@progress/kendo-angular-buttons';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { InputComponent } from './input/input.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { ComboBoxComponent } from './combo-box/combo-box.component';
+import { MultiselectComponent } from './multiselect/multiselect.component';
+import { ModelComponent } from './model/model.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadiobuttonComponent } from './radiobutton/radiobutton.component';
+import { TabComponent } from './tab/tab.component';
 
 const routes: Routes = [
   { path: 'grid', component: GridComponent },
   { path: 'getting-started', component: GettingStartedComponent },
-  { path: 'columns', component: ColumnsComponent },
-  { path: 'buttons', component: ButtonComponent },
-  { path: 'card', component: CardComponent },
+  { path: 'buttons', component: ButtonsComponent },
+  { path: 'input', component: InputComponent },
+  { path: 'dropdown', component: DropdownComponent },
+  { path: 'datepicker', component: DatepickerComponent },
+  { path: 'combo-box', component: ComboBoxComponent },
+  { path: 'multiselect', component: MultiselectComponent },
+  { path: 'model', component: ModelComponent },
+  { path: 'checkbox', component: CheckboxComponent},
+  { path: 'radiobutton', component: RadiobuttonComponent },
+  { path: 'tab', component: TabComponent },
   
   // Add more routes for other main headings and their sub-items as needed
 ];
