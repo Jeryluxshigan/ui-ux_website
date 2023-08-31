@@ -1,0 +1,33 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="Identifier">
+            Components / Text Area
+        </div>
+        <div class="title">
+            Text Area
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>The Kendo UI for Angular TextArea provides highly customizable interface for displaying multi-line
+                    text.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-textarea placeholder="Tell us a little bit about yourself..." [rows]="3"
+            resizable="vertical"></kendo-textarea>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-textarea placeholder="Tell us a little bit about yourself..." [rows]="3"
+                resizable="vertical"&gt; <br>
+                &lt;/kendo-textarea&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

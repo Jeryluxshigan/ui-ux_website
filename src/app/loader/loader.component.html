@@ -1,0 +1,41 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="Identifier">
+            Components / Loader
+        </div>
+        <div class="title">
+            Loader
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>The Loader informs users about the status of ongoing processes, such as loading an application,
+                    submitting a form, saving updates, or fetching data</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <div class="example">
+            <div class="wrap">
+                <div class="example-item" *ngFor="let loader of loaders">
+                    <div class="example-item-title">{{ loader.type | titlecase }}</div>
+                    <div class="k-block">
+                        <kendo-loader [type]="loader.type" [themeColor]="loader.themeColor" [size]="loader.size">
+                        </kendo-loader>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-loader [type]="loader.type" [themeColor]="loader.themeColor" [size]="loader.size"&gt; <br>
+                &lt;/kendo-loader&gt; 
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

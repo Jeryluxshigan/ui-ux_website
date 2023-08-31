@@ -1,0 +1,33 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="Identifier">
+            Components / Combo Box
+        </div>
+        <div class="title">
+            Combo Box
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>A multiselect’s input should stretch to fill its parent width.</li>
+                <li>No custom px width should be defined.</li>
+                <li>A multiselect should be vertically aligned to its relevant label.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-combobox [data]="listItems" [allowCustom]="allowCustom">
+        </kendo-combobox>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-combobox [data]="listItems" [allowCustom]="allowCustom"&gt; <br>
+                &lt;/kendo-combobox&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

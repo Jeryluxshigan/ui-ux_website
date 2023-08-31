@@ -20,6 +20,7 @@ kendo-appbar {
     background-color: $Primary-background-color;
     font-family: 'Roboto', sans-serif;
     font-size: 0.85rem !important;
+   
 }
 
 .k-input-solid {
@@ -38,16 +39,17 @@ footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-  }
+}
 
 /* Side-bar-Component */
 .sidebar {
     width: 200px;
-    height: 100vh;
+    max-height: 500px;
     margin-top: 2px;
     background-color: $Primary-background-color;
     border-right: 1px solid $Divider-color;
-
+    overflow-y: auto; /* Initially auto, then scroll when needed */
+   
     @media (max-width: 768px) {
         width: 100%;
         height: auto;
@@ -58,6 +60,7 @@ footer {
         z-index: 1000;
     }
 }
+
 
 .main-menu {
     list-style: none;
@@ -166,6 +169,10 @@ kendo-card {
     margin: 0 auto;
 }
 
+.k-card {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Common styles for Titles and Paragraphs */
 .title,
 .sub-title,
@@ -188,9 +195,10 @@ kendo-card {
 
 /* Styles for Sub-title */
 .sub-title {
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 5px;
 }
 
 /* Styles for Sub Paragraph */
@@ -202,9 +210,10 @@ kendo-card {
 /* Styles for Demo Container */
 .demo-container {
     margin-top: 20px;
-    border: 2px solid #303F9F;
+    border: 2px solid $Dark-primary-color;
     min-height: 40px;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Styles for Code Block */
@@ -219,13 +228,16 @@ kendo-card {
 
 /* Button styles */
 button {
-    background-color: #303F9F;
+    background-color: $Dark-primary-color;
     color: #fff;
     font-size: 14px;
+    width: max-content;
+    padding: 5px;
 }
 
 /* Media Query for Responsive Design */
 @media screen and (max-width: 1280px) {
+
     /* Adjust styles for smaller screens */
     .main-container {
         padding: 5px;
@@ -233,6 +245,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
     /* Adjust styles for even smaller screens */
     kendo-card {
         padding: 15px;
@@ -240,8 +253,143 @@ button {
 }
 
 /* Grid Component */
-kendo-grid{
+kendo-grid {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 20px;
+}
+
+.k-grid {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-para>li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Input Component */
+.content-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.Identifier {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: $Dark-primary-color;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Dropdown Component */
+.drop-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.k-input,
+.k-picker {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Checkbox Component */
+.k-checkbox:checked,
+.k-checkbox.k-checked {
+    background-color: $Dark-primary-color;
+    border-color: $Primary-text-color;
+}
+
+.k-checkbox-label {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Radiobutton Component */
+.k-radio:checked,
+.k-radio.k-checked {
+    background-color: $Dark-primary-color;
+    border-color: $Primary-text-color;
+}
+
+.k-radio-label {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* tab Component */
+.k-tabstrip-items-wrapper .k-item {
+    color: $Dark-primary-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-content {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Model Component */
+.k-window {
+    font-family: 'Roboto', sans-serif;
+}
+.k-button-solid-primary{
+    background-color: $Dark-primary-color;
+    border-color: $Dark-primary-color;
+}
+.k-button-solid-primary:hover, .k-button-solid-primary.k-hover {
+    background-color: $Dark-primary-color;
+    border-color: $Dark-primary-color;
+}
+
+/* Switch Component */
+.k-switch-on .k-switch-track {
+    background-color: $Dark-primary-color;
+    border-color: $Dark-primary-color;
+}
+
+.k-switch-on:focus .k-switch-track,
+.k-switch-on.k-focus .k-switch-track {
+    outline: 2px solid $Dark-primary-color;
+}
+
+/* loader Component */
+.wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+}
+
+.example-item {
+    flex: 0 0 33%;
+    padding: 10px;
+}
+
+.example-item-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.k-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.k-loader-primary {
+    color: $Dark-primary-color;
+}
+
+.k-loader-secondary {
+    color: $Dark-primary-color;
+}
+
+.k-loader-info {
+    color: $Dark-primary-color;
+}
+
+.k-button-solid-base{
+    background-color: $Dark-primary-color;
+    color: $Primary-background-color;
+}
+kendo-button{
+    width: max-content;
 }

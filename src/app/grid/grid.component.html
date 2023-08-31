@@ -1,18 +1,25 @@
 <div class="main-container">
     <kendo-card width="1000px">
         <!-- Main Content -->
+        <div class="Identifier">
+            Components / Grid
+        </div>
         <div class="title">
             Grid
         </div>
-        <p class="main-para">
+        <div class="main-para">
             <!-- Replace with actual content -->
-            Lorem ipsum dolor sit amet consectetur. Et a enim fermentum pellentesque elit. Tellus blandit dignissim
-            ligula lorem porta ac adipiscing ultricies. Faucibus ultricies augue viverra nunc dictum interdum. In
-            pretium leo vitae tristique hendrerit neque nisl interdum dolor sit amet consectetur. Et a enim fermentum
-            pellentesque elit. Tellus blandit dignissim ligula lorem porta ac adipiscing ultricies. Faucibus ultricies
-            augue viverra
-            nunc dictum interdum. In pretium leo vitae tristique hendrerit neque nisl interdum..
-        </p>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>All grids should fill to stretch its parent’s width.</li>
+                <li>All grids should fill the available screen height.</li>
+                <li>A header column should be draggable, for a user to expand or shrink content.</li>
+                <li>If grouping is required, it should be applied as in the screen above.</li>
+                <li>Horizontal scrolling should be applied depending on screen real state and content and not as
+                    default.</li>
+                <li>All columns should be sortable.</li>
+                <li>Virtual scrolling should be added for pagination.</li>
+            </ul>
+        </div>
         <div class="sub-title">
             Example
         </div>
@@ -22,11 +29,16 @@
             <kendo-grid-column field="Category.CategoryName" title="Category"></kendo-grid-column>
             <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
         </kendo-grid>
-         <!-- Code Demo Container -->
-         <div class="demo-container">
+        <!-- Code Demo Container -->
+        <div class="demo-container">
             <div class="code">
-                 <!-- Replace with actual code snippet -->
-                 ng add @progress/kendo-angular-grid
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-grid [data]="gridData"&gt; <br>
+                &lt;kendo-grid-column field="ProductID" title="ID"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="ProductName" title="Name"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="Category.CategoryName" title="Category"&gt;&lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="UnitPrice" title="Price"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;/kendo-grid&gt;
                 <button kendoButton (click)="onButtonClick()">copy</button>
             </div>
         </div>

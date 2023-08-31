@@ -1,0 +1,48 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="Identifier">
+            Components / Tabs
+        </div>
+        <div class="title">
+            Tabs
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Tabs should be applied with its default styling.</li>
+                <li>No tab should be highlighted individually.</li>
+                <li>A first open tab should set from the tab list.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-tabstrip>
+            <kendo-tabstrip-tab title="Tab 1">
+                <ng-template kendoTabContent>
+                    <p class="tab-content">Tab 1 Content</p>
+                </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="Tab 2" [selected]="true">
+                <ng-template kendoTabContent>
+                    <p class="tab-content">Tab 2 Content</p>
+                </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="Tab 3">
+                <ng-template kendoTabContent>
+                    <p class="tab-content">Tab 3 Content</p>
+                </ng-template>
+            </kendo-tabstrip-tab>
+        </kendo-tabstrip>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-multiselect [data]="listItems"&gt; <br>
+                &lt;/kendo-multiselect&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>
