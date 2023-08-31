@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
-import { LayoutComponent } from './layout/layout.component';
 import { ComponentsComponent } from './components/components.component';
 import { GridComponent } from './grid/grid.component';
 import { IconsModule } from '@progress/kendo-angular-icons';
@@ -33,6 +32,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { TabComponent } from './tab/tab.component';
+import { SwitchComponent } from './switch/switch.component';
+import { NotificationComponent } from './notification/notification.component';
+import { NotificationModule } from '@progress/kendo-angular-notification';
+import { ToolKitComponent } from './tool-kit/tool-kit.component';
+import { LoaderComponent } from './loader/loader.component';
+import { IndicatorsModule } from '@progress/kendo-angular-indicators';
+import { PopupModule } from '@progress/kendo-angular-popup';
+import { PopupComponent } from './popup/popup.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { TextAreaComponent } from './text-area/text-area.component';
+
+
 
 
 
@@ -53,7 +64,6 @@ import { TabComponent } from './tab/tab.component';
     SidebarComponent,
     MainBodyComponent,
     GettingStartedComponent,
-    LayoutComponent,
     ComponentsComponent,
     GridComponent,
     ButtonsComponent,
@@ -66,7 +76,13 @@ import { TabComponent } from './tab/tab.component';
     ModelComponent,
     CheckboxComponent,
     RadiobuttonComponent,
-    TabComponent
+    TabComponent,
+    SwitchComponent,
+    NotificationComponent,
+    ToolKitComponent,
+    LoaderComponent,
+    PopupComponent,
+    TextAreaComponent
   ],
   imports: [
     BrowserModule,
@@ -82,7 +98,11 @@ import { TabComponent } from './tab/tab.component';
     UploadsModule,
     HttpClientModule,
     DialogsModule,
-    LabelModule
+    LabelModule,
+    NotificationModule,
+    IndicatorsModule,
+    PopupModule,
+    ButtonsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

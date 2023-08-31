@@ -1,0 +1,41 @@
+<div class="main-container">
+    <kendo-card width="1000px">
+        <!-- Main Content -->
+        <div class="Identifier">
+            Components / Popup
+        </div>
+        <div class="title">
+            Popup
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>The Popup is built from the ground up and specifically for Angular, so that you get a
+                    high-performance control which integrates tightly with your application and with the rest of the
+                    Kendo UI for Angular components.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-button #anchor (click)="show = !show">Toggle Popup</kendo-button>
+        <kendo-popup [anchor]="anchor.element" *ngIf="show">
+            <div style="padding: 30px; background-color: #fcf7f8">Popup content.</div>
+        </kendo-popup>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-button #anchor (click)="show = !show"&gt; <br>
+                Toggle Popup <br>
+                &lt;/kendo-button&gt; <br>
+                &lt;kendo-popup [anchor]="anchor.element" *ngIf="show"&gt; <br>
+                &lt;div style="padding: 30px; background-color: #fcf7f8"&gt; <br>
+                Popup content. <br>
+                &lt;/div&gt; <br>
+                &lt;/kendo-popup&gt; 
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+    </kendo-card>
+</div>

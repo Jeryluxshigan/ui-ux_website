@@ -2,31 +2,30 @@
     <kendo-card width="1000px">
         <!-- Main Content -->
         <div class="Identifier">
-            Components / Checkbox
+            Components / Text Area
         </div>
         <div class="title">
-            Checkbox
+            Text Area
         </div>
         <div class="main-para">
             <!-- Replace with actual content -->
             <ul style="list-style-type: disc; padding-left: 20px;">
-                <li>Check boxes could be aligned vertically or horizontally depending on layout and space availability.
-                </li>
-                <li>A minimum of 15px should be kept between boxes.</li>
+                <li>The Kendo UI for Angular TextArea provides highly customizable interface for displaying multi-line
+                    text.</li>
             </ul>
         </div>
         <div class="sub-title">
             Example
         </div>
-        <kendo-label class="k-checkbox-label" [for]="notification" text="Allow Notifications"></kendo-label>
-        <input type="checkbox" #notification kendoCheckBox />
+        <kendo-textarea placeholder="Tell us a little bit about yourself..." [rows]="3"
+            resizable="vertical"></kendo-textarea>
         <!-- Code Demo Container -->
         <div class="demo-container">
             <div class="code">
                 <!--use &lt, &gt for display the code in text format -->
-                &lt;kendo-label class="k-checkbox-label" [for]="notification" text="Allow Notifications"&gt; <br>
-                &lt;/kendo-label&gt; <br>
-                &lt;input type="checkbox" #notification kendoCheckBox /&gt;
+                &lt;kendo-textarea placeholder="Tell us a little bit about yourself..." [rows]="3"
+                resizable="vertical"&gt; <br>
+                &lt;/kendo-textarea&gt;
                 <button kendoButton (click)="onButtonClick()">copy</button>
             </div>
         </div>

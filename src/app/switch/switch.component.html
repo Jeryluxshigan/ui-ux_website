@@ -2,31 +2,31 @@
     <kendo-card width="1000px">
         <!-- Main Content -->
         <div class="Identifier">
-            Components / Checkbox
+            Components / Switch
         </div>
         <div class="title">
-            Checkbox
+            Switch
         </div>
         <div class="main-para">
             <!-- Replace with actual content -->
             <ul style="list-style-type: disc; padding-left: 20px;">
-                <li>Check boxes could be aligned vertically or horizontally depending on layout and space availability.
-                </li>
-                <li>A minimum of 15px should be kept between boxes.</li>
+                <li>The Switch provides options for setting and styling the titles of its labels.</li>
             </ul>
         </div>
         <div class="sub-title">
             Example
         </div>
-        <kendo-label class="k-checkbox-label" [for]="notification" text="Allow Notifications"></kendo-label>
-        <input type="checkbox" #notification kendoCheckBox />
+        <kendo-label text="Labels">
+            <kendo-switch onLabel="Yes" offLabel="No"></kendo-switch>
+        </kendo-label>
         <!-- Code Demo Container -->
         <div class="demo-container">
             <div class="code">
                 <!--use &lt, &gt for display the code in text format -->
-                &lt;kendo-label class="k-checkbox-label" [for]="notification" text="Allow Notifications"&gt; <br>
-                &lt;/kendo-label&gt; <br>
-                &lt;input type="checkbox" #notification kendoCheckBox /&gt;
+                &lt;kendo-label text="Labels"&gt; <br>
+                &lt;kendo-switch onLabel="Yes" offLabel="No"&gt; <br>
+                &lt;/kendo-switch&gt; <br>
+                &lt;/kendo-label&gt; 
                 <button kendoButton (click)="onButtonClick()">copy</button>
             </div>
         </div>
