@@ -42,6 +42,10 @@ import { PopupModule } from '@progress/kendo-angular-popup';
 import { PopupComponent } from './popup/popup.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { TextAreaComponent } from './text-area/text-area.component';
+import { EditorModule } from '@progress/kendo-angular-editor';
+import { MenuModule } from '@progress/kendo-angular-menu';
+
+
 
 
 
@@ -82,7 +86,8 @@ import { TextAreaComponent } from './text-area/text-area.component';
     ToolKitComponent,
     LoaderComponent,
     PopupComponent,
-    TextAreaComponent
+    TextAreaComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -103,6 +108,10 @@ import { TextAreaComponent } from './text-area/text-area.component';
     IndicatorsModule,
     PopupModule,
     ButtonsModule,
+    EditorModule,
+    MenuModule,
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

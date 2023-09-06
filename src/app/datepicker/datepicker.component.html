@@ -29,5 +29,35 @@
                 <button kendoButton (click)="onButtonClick()">copy</button>
             </div>
         </div>
+        <div class="title2">
+            Date Range
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>The Kendo UI for Angular DateRange is a container for holding start and end date inputs, and a date
+                    range popup.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-daterange>
+            <kendo-floatinglabel text="Check-in">
+                <kendo-dateinput kendoDateRangeStartInput></kendo-dateinput>
+            </kendo-floatinglabel>
+            <kendo-floatinglabel text="Check-out">
+                <kendo-dateinput kendoDateRangeEndInput></kendo-dateinput>
+            </kendo-floatinglabel>
+        </kendo-daterange>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-datepicker placeholder="Choose a date ...&gt; <br>
+                &lt;/kendo-datepicker&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
     </kendo-card>
 </div>

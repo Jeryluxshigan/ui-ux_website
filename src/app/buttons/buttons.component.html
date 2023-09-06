@@ -14,7 +14,8 @@
                 <li>If a button needs to be highlighted, then it should carry the “danger” class.</li>
                 <li>A 5px gap should be kept between buttons.</li>
                 <li>No button should be given a fixed size. All buttons should be responsive.</li>
-                <li>When the button action needs to be prevented, the button should be in an inactive state unless the error needs to be showcase to the user</li>
+                <li>When the button action needs to be prevented, the button should be in an inactive state unless the
+                    error needs to be showcase to the user</li>
                 <li>Search / Save buttons should always be displayed at far right of the screen.</li>
             </ul>
         </div>
@@ -22,6 +23,34 @@
             Example
         </div>
         <button kendoButton (click)="onButtonClick()">My Button</button>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;button kendoButton (click)="onButtonClick()" class="example-btn&gt; <br>
+                My Button <br>
+                &lt;/button&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+        <div class="title2">
+            Button Group
+        </div>
+        <div class="main-para">
+            <!-- Replace with actual content -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Each Button in the ButtonGroup can be separately configured depending on the requirements of your
+                    project and according to its API reference.</li>
+            </ul>
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-buttongroup>
+            <button kendoButton [toggleable]="true" [svgIcon]="boldSVG" title="Bold"></button>
+            <button kendoButton [toggleable]="true" [svgIcon]="italicSVG" title="Italic"></button>
+            <button kendoButton [toggleable]="true" [svgIcon]="underlineSVG" title="Underline"></button>
+        </kendo-buttongroup>
         <!-- Code Demo Container -->
         <div class="demo-container">
             <div class="code">

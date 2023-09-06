@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-grid',
   templateUrl: './grid.component.html',
@@ -39,4 +41,11 @@ export class GridComponent {
       },
     },
   ];
+  public gridView: any[] = [
+    { ProductID: 1, ProductName: 'Product 1', UnitPrice: 10 },
+    { ProductID: 2, ProductName: 'Product 2', UnitPrice: 20 },
+    // Add more data here
+  ];
+  
+ 
 }

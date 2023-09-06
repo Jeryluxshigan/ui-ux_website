@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import {
+  SVGIcon,
+  boldIcon,
+  italicIcon,
+  underlineIcon,
+} from "@progress/kendo-svg-icons";
 
 @Component({
   selector: 'app-buttons',
@@ -10,5 +16,7 @@ export class ButtonsComponent {
     console.log("click");
     alert("Kendo Angular UI Button was clicked.");
   }
-  
+  public boldSVG: SVGIcon = boldIcon;
+  public italicSVG: SVGIcon = italicIcon;
+  public underlineSVG: SVGIcon = underlineIcon;
 }

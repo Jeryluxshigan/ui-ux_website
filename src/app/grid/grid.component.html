@@ -42,5 +42,53 @@
                 <button kendoButton (click)="onButtonClick()">copy</button>
             </div>
         </div>
+        <div class="title">
+            Grid Filtering
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-grid [kendoGridBinding]="gridData" [filterable]="true" [height]="200">
+            <kendo-grid-column field="CompanyName"></kendo-grid-column>
+        </kendo-grid>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-grid [data]="gridData"&gt; <br>
+                &lt;kendo-grid-column field="ProductID" title="ID"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="ProductName" title="Name"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="Category.CategoryName" title="Category"&gt;&lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="UnitPrice" title="Price"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;/kendo-grid&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
+        <div class="title">
+            Grid Sorting
+        </div>
+        <div class="sub-title">
+            Example
+        </div>
+        <kendo-grid [kendoGridBinding]="gridView" [sortable]="true" [height]="200">
+            <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+            <kendo-grid-column field="ProductName" title="Product Name">
+            </kendo-grid-column>
+            <kendo-grid-column field="UnitPrice" title="Unit Price">
+            </kendo-grid-column>
+        </kendo-grid>
+        <!-- Code Demo Container -->
+        <div class="demo-container">
+            <div class="code">
+                <!--use &lt, &gt for display the code in text format -->
+                &lt;kendo-grid [data]="gridData"&gt; <br>
+                &lt;kendo-grid-column field="ProductID" title="ID"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="ProductName" title="Name"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="Category.CategoryName" title="Category"&gt;&lt;/kendo-grid-column&gt;<br>
+                &lt;kendo-grid-column field="UnitPrice" title="Price"&gt; &lt;/kendo-grid-column&gt;<br>
+                &lt;/kendo-grid&gt;
+                <button kendoButton (click)="onButtonClick()">copy</button>
+            </div>
+        </div>
     </kendo-card>
 </div>

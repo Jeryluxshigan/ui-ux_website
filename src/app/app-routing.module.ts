@@ -21,6 +21,7 @@ import { PopupComponent } from './popup/popup.component';
 import { TextAreaComponent } from './text-area/text-area.component';
 
 
+
 const routes: Routes = [
   { path: 'grid', component: GridComponent },
   { path: 'getting-started', component: GettingStartedComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'popup', component: PopupComponent },
   { path: 'text-area', component: TextAreaComponent },
   
+
   // Add more routes for other main headings and their sub-items as needed
 ];
 

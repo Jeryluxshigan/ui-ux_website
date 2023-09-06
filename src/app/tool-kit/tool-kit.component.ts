@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./tool-kit.component.scss']
 })
 export class ToolKitComponent {
-
+  public onButtonClick(): void {
+    console.log("click");
+    alert("Kendo Angular UI Button was clicked.");
+  }
+  public value = `<p> The Editor enables users to create rich textual content. </p>`;
 }

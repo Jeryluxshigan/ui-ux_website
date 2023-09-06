@@ -10,5 +10,5 @@ export class DatepickerComponent {
     console.log("click");
     alert("Kendo Angular UI Button was clicked.");
   }
-
+  public range = { start: null, end: null };
 }

@@ -7,6 +7,33 @@ $Primary-text-color: #212121;
 $Secondary-text-color: #757575;
 $Divider-color: #bdbdbd;
 
+.main-content {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* Style the sidebar */
+.app-sidebar {
+    flex: 0 0 200px;
+    background-color: #333;
+    color: white;
+    overflow-y: auto;
+}
+
+/* Style the main body content */
+.main-body-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+/* Additional styles for the entire page */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
 /* Nav-bar-Component */
 .logo {
     width: 140px;
@@ -20,7 +47,7 @@ kendo-appbar {
     background-color: $Primary-background-color;
     font-family: 'Roboto', sans-serif;
     font-size: 0.85rem !important;
-   
+
 }
 
 .k-input-solid {
@@ -44,12 +71,14 @@ footer {
 /* Side-bar-Component */
 .sidebar {
     width: 200px;
-    max-height: 500px;
+    height: calc(100vh - 90px);
     margin-top: 2px;
     background-color: $Primary-background-color;
     border-right: 1px solid $Divider-color;
-    overflow-y: auto; /* Initially auto, then scroll when needed */
-   
+    overflow-y: auto;
+    /* Initially auto, then scroll when needed */
+
+
     @media (max-width: 768px) {
         width: 100%;
         height: auto;
@@ -157,6 +186,7 @@ footer {
 }
 
 /* Base styles for Main Container */
+
 .main-container {
     padding: 10px;
 }
@@ -213,7 +243,7 @@ kendo-card {
     border: 2px solid $Dark-primary-color;
     min-height: 40px;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Styles for Code Block */
@@ -266,6 +296,13 @@ kendo-grid {
 .main-para>li {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+}
+
+/* Date Component */
+.title2 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 /* Input Component */
@@ -330,11 +367,14 @@ kendo-grid {
 .k-window {
     font-family: 'Roboto', sans-serif;
 }
-.k-button-solid-primary{
+
+.k-button-solid-primary {
     background-color: $Dark-primary-color;
     border-color: $Dark-primary-color;
 }
-.k-button-solid-primary:hover, .k-button-solid-primary.k-hover {
+
+.k-button-solid-primary:hover,
+.k-button-solid-primary.k-hover {
     background-color: $Dark-primary-color;
     border-color: $Dark-primary-color;
 }
@@ -386,10 +426,12 @@ kendo-grid {
     color: $Dark-primary-color;
 }
 
-.k-button-solid-base{
+.k-button-solid-base {
     background-color: $Dark-primary-color;
     color: $Primary-background-color;
+    border-color: $Primary-background-color;
 }
-kendo-button{
+
+kendo-button {
     width: max-content;
 }
