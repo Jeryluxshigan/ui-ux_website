@@ -7,6 +7,11 @@ $Primary-text-color: #212121;
 $Secondary-text-color: #757575;
 $Divider-color: #bdbdbd;
 
+/* Global font */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .main-content {
     display: flex;
     height: calc(100vh - 60px);
@@ -305,6 +310,10 @@ kendo-grid {
     font-size: 24px;
 }
 
+kendo-datepicker {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Input Component */
 .content-title {
     font-family: 'Roboto', sans-serif;
@@ -326,11 +335,35 @@ kendo-grid {
     font-size: 16px;
 }
 
-.k-input,
-.k-picker {
-    font-family: 'Roboto', sans-serif;
+.k-item {
+    font-family: 'Roboto', sans-serif !important;
 }
 
+.k-input,
+.k-picker {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.k-input-inner {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.k-dropdown-list {
+    font-family: 'Roboto', sans-serif !important; 
+}
+
+
+.custom-dropdown .k-item {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Combobox Component */
+kendo-combobox{
+    font-family: 'Roboto', sans-serif !important;
+}
+.k-input-inner{
+    font: 'Roboto', sans-serif !important;
+}
 /* Checkbox Component */
 .k-checkbox:checked,
 .k-checkbox.k-checked {
