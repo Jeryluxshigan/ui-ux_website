@@ -10,5 +10,5 @@ export class ToolKitComponent {
     console.log("click");
     alert("Kendo Angular UI Button was clicked.");
   }
-  public value = `<p> The Editor enables users to create rich textual content. </p>`;
+  public value = `<p> </p>`;
 }
